@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fill_square"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/brk_btn"
+                android:text="Breakfast"
+                android:background="#002751"
+                android:textColor="#8AE1D0"
+                app:backgroundTint="#002751"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/brkfast"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textColor="#002751"
+                android:textColorHint="#8AE1D0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/lunch_btn"
+                android:text="Lunch"
+                android:background="#002751"
+                android:textColor="#8AE1D0"
+                app:backgroundTint="#002751"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/lunch"
+                android:textSize="25sp"
+                android:textColorHint="#8AE1D0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="#002751"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/din_btn"
+                android:text="Dinner"
+                android:background="#002751"
+                android:textColor="#8AE1D0"
+                app:backgroundTint="#002751"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dinner"
+                android:textSize="25sp"
+                android:textColorHint="#8AE1D0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="#002751"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_below="@+id/layout1"
+        android:text="Scan your Med"
+        android:drawableRight="@drawable/ic_scan"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_below="@+id/scan_btn"
+        android:text="Book Appointment"
+        android:drawableRight="@drawable/ic_book_appointment"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/recent_med_btn"
+        android:layout_below="@id/book"
+        android:text="Recent Prescription"
+        android:drawableRight="@drawable/ic_list"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buy_med"
+        android:layout_below="@+id/recent_med_btn"
+        android:text="Buy Medicine"
+        android:drawableRight="@drawable/ic_buy"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/music_btn"
+        android:layout_below="@id/buy_med"
+        android:text="Listen to Music"
+        android:drawableRight="@drawable/ic_music"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/yoga_btn"
+        android:layout_below="@+id/music_btn"
+        android:text="Watch and Learn Yoga"
+        android:drawableRight="@drawable/ic_relax"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_message"/>
+
+</RelativeLayout>

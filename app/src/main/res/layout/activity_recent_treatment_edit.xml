@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fill_square"
+    tools:context=".RecentTreatmentEdit">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:text="Add"
+        android:drawableRight="@drawable/ic_add"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/done"
+        android:text="Done"
+        android:drawableRight="@drawable/ic_done"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#002751"
+        android:textColor="#8AE1D0"
+        app:backgroundTint="#002751"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

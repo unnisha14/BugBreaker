@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/border_square"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_marginLeft="340dp"
+        android:src="@drawable/ic_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/illness"
+        android:textColor="#002751"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#002751"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Breakfast"
+            android:textColor="#002751"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/breakfast_before"
+            android:text="Before"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+        <CheckBox
+            android:id="@+id/breakfast_after"
+            android:text="After"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Lunch"
+            android:textColor="#002751"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/lunch_before"
+            android:text="Before"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+        <CheckBox
+            android:id="@+id/lunch_after"
+            android:text="After"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Dinner"
+            android:textColor="#002751"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/dinner_before"
+            android:text="Before"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+        <CheckBox
+            android:id="@+id/dinner_after"
+            android:text="After"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#002751"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

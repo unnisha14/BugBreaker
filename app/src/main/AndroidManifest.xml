@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project7">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/optum_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project7">
+        <activity android:name=".DoctorList"></activity>
+        <activity android:name=".BookAppoinment" />
+        <activity android:name=".ChatBot" />
+        <activity android:name=".zoom" />
+        <activity android:name=".YogaActivity" />
+        <activity android:name=".MusicPlayer" />
+        <activity android:name=".SpeachActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".RecentTreatmentEdit" />
+        <activity
+            android:name=".RecentTreatment"
+            android:label="Recent Condition" />
+        <activity
+            android:name=".MedHist"
+            android:label="Medical History" />
+        <activity
+            android:name=".MedHistEdit"
+            android:label="Edit" />
+        <activity
+            android:name=".CreateAcc"
+            android:label="Create Account" />
+        <activity
+            android:name=".HomePage"
+            android:label="Home Page" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="TDS" />
+    </application>
+
+</manifest>
